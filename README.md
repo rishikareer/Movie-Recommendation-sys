@@ -46,33 +46,7 @@ This will automatically:
 
 ---
 
-## 3. Configuration & API Keys
-
-Copy `.env.example` to `.env` in the project root:
-
-```env
-# Supabase Configuration
-VITE_SUPABASE_URL=https://your-project-id.supabase.co
-VITE_SUPABASE_ANON_KEY=your-supabase-anon-key-here
-
-# TMDB / IMDb API Key (Optional - free from https://www.themoviedb.org/settings/api)
-VITE_TMDB_API_KEY=your-api-key-here
-```
-
-### Where to get your free keys:
-1. **Supabase**:
-   - Create a free project at [supabase.com](https://supabase.com).
-   - In your dashboard, go to **Project Settings $\rightarrow$ API**.
-   - Copy **Project URL** and **anon public key**.
-   - Open **SQL Editor**, paste the contents of [`supabase/schema.sql`](supabase/schema.sql), and click **Run**.
-2. **TMDB / IMDb Gateway**:
-   - Free API key from [The Movie Database](https://www.themoviedb.org/settings/api) or [OMDb](http://www.omdbapi.com/apikey.aspx).
-3. **Smart Demo / Offline Mode**:
-   - If keys are not configured yet, CineMatch will seamlessly run in **Local Demo Mode** with an initial catalog and mock user session.
-
----
-
-## 4. Key Features
+## 3. Key Features
 
 - **Transparent On-Demand Discovery**: Type any movie title or IMDb ID into the search bar. The Java 17 backend dynamically fetches metadata, verified IMDb ratings, and high-res posters from TMDB and OMDb in the background, with zero manual import required.
 - **Personalized Watchlist**: Add movies to your personal watchlist with one click. Switch between *Plan to Watch* and *Watched* status tabs.
